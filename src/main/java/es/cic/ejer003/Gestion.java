@@ -1,7 +1,9 @@
 package es.cic.ejer003;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -11,6 +13,24 @@ public class Gestion {
 	
 	public Gestion() {
 		formacion = new Formacion();
+		/*File file = new File("Formacion"+formacion.getAnho()+".csv");
+		if(file.exists()){
+			BufferedReader bufferedReader=null;
+			try{
+				bufferedReader = new BufferedReader(new FileReader(file));
+				String linea = bufferedReader.readLine();
+				while(linea !=null){
+					String[] campos = linea.split(",");
+					Alumno alumno = new Alumno();
+					alumno.setNombre(campos[0]);
+					alumno.setApellido1(campos[1]);
+					alumno.setApellido2(campos[2]);
+					formacion.getAlumnos().add(alumno);
+				}
+			}catch(IOException e){
+				e.printStackTrace();
+			}
+		}*/
 	}
 	
 	public void addAlumno(Alumno alumno) {
@@ -58,7 +78,7 @@ public class Gestion {
 			bw.close();
 			fw.close();
 		}catch(IOException ioe) {
-			
+			ioe.printStackTrace();
 		}
 	}
 

@@ -24,6 +24,7 @@ class GestionTest {
 		gestion.addAlumno(alumno);
 	}
 
+
 	@Test
 	void testAddAlumno() {
 		Alumno alumno = new Alumno();
