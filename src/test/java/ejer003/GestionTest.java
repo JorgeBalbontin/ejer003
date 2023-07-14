@@ -7,6 +7,9 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import es.cic.ejer003.Alumno;
+import es.cic.ejer003.Gestion;
+
 class GestionTest {
 
 	private Gestion gestion;

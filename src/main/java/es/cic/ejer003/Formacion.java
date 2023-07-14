@@ -1,4 +1,4 @@
-package ejer003;
+package es.cic.ejer003;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

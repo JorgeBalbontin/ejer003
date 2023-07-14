@@ -1,4 +1,4 @@
-package ejer003;
+package es.cic.ejer003;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -46,7 +46,7 @@ public class Gestion {
 	
 	public void GuardarFormacion() {
 		try {
-			File file = new File("Formacion.csv");
+			File file = new File("Formacion"+formacion.getAnho()+".csv");
 			FileWriter fw = new FileWriter(file);
 			BufferedWriter bw = new BufferedWriter(fw);
 			for(Alumno a : formacion.getAlumnos()) {
